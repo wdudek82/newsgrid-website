@@ -173,6 +173,18 @@ h6 {
   border-bottom: 1px dotted #555;
 }
 
+/* Inner page grid container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 /* Navigation */
 #main-nav {
   background: #fff;
